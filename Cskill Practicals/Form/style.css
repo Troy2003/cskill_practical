@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 94vh;
+  width: 70vw;
+  padding:2rem;
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.main::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #EAECEE;
+  opacity: 0.09;
+  z-index: -1;
+  background: url('./back.jpg');
+  background-size: cover;
+  animation: changeBack 6s linear 2s infinite;
+  transition: all 4s linear;
+}
+
+@keyframes changeBack {
+  0%{
+    transform: translateX(0rem);
+  }
+  
+  25%{
+    transform: translateX(1rem);
+  } 
+  50%{
+    transform: translateX(0rem);
+  } 
+
+  75%{
+    transform: translateX(-1rem);
+  }
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+  color: #808b96;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-row {
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.gap {
+  gap: 6rem;
+}
+.gap-01 {
+  gap: 1rem;
+}
+
+.gap-02{
+  gap: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-bet {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+
+.input-con input {
+  height: 15%;
+  width: 65%;
+  text-transform: uppercase;
+}
+
+.input {
+ 
+  color: #566573;
+  font-weight: 500;
+  padding: 1rem 0.5rem;
+  border: 1px solid #566573;
+  outline: none;
+}
+
+.gen {
+  height: 15%;
+  width: 65%;
+}
+
+.lang-con{
+  height: 15%;
+  width: 100%;
+}
+
+.gen input[type="radio"] {
+  display: inline;
+}
+
+.radio {
+  -webkit-appearance: normal;
+  display: inline;
+}
+
+.address-con input {
+  width: 84%;
+  height: 80%;
+}
+
+.adress-input {
+  height: 80%;
+}
+
+.btn{
+  height: fit-content;
+  width: fit-content;
+  padding: 1rem 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ABB2B9;
+  background: none;
+  border: 1px solid #ABB2B9;
+  border-radius: 0.5rem;
+  transition: background 2s linear;
+  font-size: 0.9rem;
+}
+
+.btn:hover{
+  background: #ABB2B9;
+  color: #FFFFFF;
+}
+
+.language{
+  width: 84%;
+}
